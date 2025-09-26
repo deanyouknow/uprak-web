@@ -1,33 +1,48 @@
-# Countries App
+# 🌍 TerraExplorer
 
-A React application built with Vite that allows users to browse and explore information about countries around the world.
+Cari tahu informasi lengkap negara-negara di seluruh dunia melalui **TerraExplorer**.  
+Aplikasi ini menyajikan beragam data penting seperti **wilayah, bahasa, mata uang, zona waktu, ibu kota, populasi, benua**, hingga informasi **geografis** lainnya.  
+Didesain untuk memberikan pengalaman eksplorasi interaktif, ringan, dan modern menggunakan teknologi **React + Vite**.
 
-## Installation
+---
 
-1. Clone the repository:
+## 🚀 Demo
+- [demo.inline.works](https://demo.inline.works)  
+- [uprakweb.vercel.app](https://uprakweb.vercel.app)
+
+---
+
+## 📦 Cara Install & Menjalankan
+
+Pastikan Anda sudah menginstal **Node.js** (versi terbaru disarankan).
+
+1. Clone repository ini
    ```
-   git clone https://github.com/deanyouknow/uprak-web.git
+   git clone https://github.com/deanyouknow/uprak-web
+   ```
+3. Masuk ke folder project
+   ```
    cd uprak-web
    ```
-
-2. Install dependencies:
+5. Install dependencies
    ```
    npm install
    ```
-
-3. Start the development server:
+7. Jalankan development server
    ```
    npm run dev
    ```
+9. Buka di browser pada alamat yang muncul (biasanya `http://localhost:5173`)
 
-4. Open your browser and navigate to `http://localhost:5173`
+---
 
-## Demo
+## 👥 Anggota Kelompok
+- Raditya Gustian Putra  
+- Dean Althayani Murtadha  
+- Shafa Albi Pratama  
 
-Check out the live demo: [Demo Link](https://uprakweb.vercel.app)
+---
 
-## Group Members
-
-- Anggota 1
-- Anggota 2
-- Anggota 3
+## 📖 Lisensi
+Project ini dibuat untuk kebutuhan edukasi dan pembelajaran.  
+Feel free untuk mengembangkan lebih lanjut dan berkontribusi!  
