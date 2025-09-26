@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link, useLocation } from 'react-router-dom';
 
-const Layout = ({ children }) => {
+const Navbar = ({ children }) => {
   const location = useLocation();
 
   return (
@@ -52,4 +52,4 @@ const Layout = ({ children }) => {
   );
 };
 
-export default Layout;
+export default Navbar;

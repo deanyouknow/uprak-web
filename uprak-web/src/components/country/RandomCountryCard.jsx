@@ -38,7 +38,7 @@ const RandomCountryCard = ({ country, index }) => {
         
         <div className="space-y-1 text-xs text-gray-600">
           <div className="flex justify-between">
-            <span className="font-medium">Population:</span>
+            <span className="font-medium">Populasi:</span>
             <span className="text-right text-xs">
               {country.population > 1000000 
                 ? `${(country.population / 1000000).toFixed(1)}M` 
@@ -47,11 +47,11 @@ const RandomCountryCard = ({ country, index }) => {
             </span>
           </div>
           <div className="flex justify-between">
-            <span className="font-medium">Region:</span>
+            <span className="font-medium">Wilayah:</span>
             <span className="text-right">{country.region}</span>
           </div>
           <div className="flex justify-between">
-            <span className="font-medium">Capital:</span>
+            <span className="font-medium">Ibu Kota:</span>
             <span className="text-right truncate max-w-[80px]">
               {country.capital?.[0] || 'N/A'}
             </span>

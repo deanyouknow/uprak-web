@@ -19,30 +19,30 @@ const UserCountryCard = ({ country }) => {
       <div className="p-6 md:p-8">
         <div className="flex items-center mb-4">
           <div className="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></div>
-          <span className="text-sm font-medium text-blue-100">Your Location</span>
+          <span className="text-sm font-medium text-blue-100">Lokasi Anda</span>
         </div>
         
         <div className="grid md:grid-cols-2 gap-6 items-center">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Welcome to {country.name?.common}!
+              Selamat Datang Di {country.name?.common}!
             </h2>
             
             <div className="space-y-3 text-blue-100">
               <div className="flex items-center">
-                <span className="font-medium mr-3 min-w-[80px]">Capital:</span>
+                <span className="font-medium mr-3 min-w-[80px]">Ibu Kota:</span>
                 <span>{country.capital?.[0] || 'N/A'}</span>
               </div>
               <div className="flex items-center">
-                <span className="font-medium mr-3 min-w-[80px]">Population:</span>
+                <span className="font-medium mr-3 min-w-[80px]">Populasi:</span>
                 <span>{country.population?.toLocaleString()}</span>
               </div>
               <div className="flex items-center">
-                <span className="font-medium mr-3 min-w-[80px]">Region:</span>
+                <span className="font-medium mr-3 min-w-[80px]">Wilayah:</span>
                 <span>{country.region}</span>
               </div>
               <div className="flex items-center">
-                <span className="font-medium mr-3 min-w-[80px]">Currency:</span>
+                <span className="font-medium mr-3 min-w-[80px]">Mata Uang:</span>
                 <span>
                   {country.currencies 
                     ? Object.values(country.currencies).map(c => c.name).join(', ')

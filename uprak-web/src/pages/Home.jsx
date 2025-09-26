@@ -8,6 +8,7 @@ import RandomCountryGrid from '../components/country/RandomCountryGrid';
 import Loading from '../components/common/Loading';
 import ErrorMessage from '../components/common/ErrorMessage';
 import Button from '../components/ui/Button';
+import Navbar from '../components/common/Navbar';
 
 const Home = () => {
   const { userCountry, loading: locationLoading } = useUserLocation();
@@ -24,7 +25,8 @@ const Home = () => {
   if (error) return <Layout><ErrorMessage message={error} /></Layout>;
 
   return (
-    <Layout>
+    <>
+    <Navbar>
       <div className="space-y-12">
         {/* User Country Section */}
         <UserCountryCard country={userCountry} />
@@ -38,10 +40,10 @@ const Home = () => {
           <div className="flex justify-between items-center mb-6">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
-                Discover Countries
+                Jelajahi Negara Negara
               </h2>
               <p className="text-gray-600">
-                Explore random countries from around the world
+                Temukan informasi menarik tentang berbagai negara di seluruh dunia.
               </p>
             </div>
             <Button 
@@ -73,7 +75,7 @@ const Home = () => {
                 size="lg"
                 className="w-full sm:w-auto"
               >
-                Explore All Countries →
+                Jelajahi Semua Negara →
               </Button>
             </Link>
           </div>
@@ -88,35 +90,35 @@ const Home = () => {
         >
           <div className="text-center">
             <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
-              Explore the World
+              Fakta Menarik Tentang Negara Negara di Dunia
             </h3>
             <p className="text-gray-600 max-w-2xl mx-auto mb-6">
-              Discover detailed information about every country in the world. 
-              Learn about their cultures, economies, geography, and much more.
+              Dunia ini terdiri dari berbagai negara dengan keunikan budaya, bahasa, dan sejarah masing-masing. Berikut adalah beberapa fakta menarik:
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto text-center">
               <div className="bg-white rounded-lg p-4 shadow-sm">
                 <div className="text-2xl font-bold text-blue-600 mb-1">195</div>
-                <div className="text-sm text-gray-600">Countries</div>
+                <div className="text-sm text-gray-600">Negara</div>
               </div>
               <div className="bg-white rounded-lg p-4 shadow-sm">
                 <div className="text-2xl font-bold text-green-600 mb-1">7</div>
-                <div className="text-sm text-gray-600">Continents</div>
+                <div className="text-sm text-gray-600">Benua</div>
               </div>
               <div className="bg-white rounded-lg p-4 shadow-sm">
                 <div className="text-2xl font-bold text-purple-600 mb-1">180+</div>
-                <div className="text-sm text-gray-600">Currencies</div>
+                <div className="text-sm text-gray-600">Mata Uang</div>
               </div>
               <div className="bg-white rounded-lg p-4 shadow-sm">
                 <div className="text-2xl font-bold text-orange-600 mb-1">6500+</div>
-                <div className="text-sm text-gray-600">Languages</div>
+                <div className="text-sm text-gray-600">Bahasa</div>
               </div>
             </div>
           </div>
         </motion.section>
       </div>
-    </Layout>
+    </Navbar>
+    </>
   );
 };
 

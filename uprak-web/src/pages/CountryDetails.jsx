@@ -12,7 +12,7 @@ const CountryDetails = () => {
 
   if (loading) return <Layout><Loading /></Layout>;
   if (error) return <Layout><ErrorMessage message={error} onRetry={refetch} /></Layout>;
-  if (!country) return <Layout><div>Country not found</div></Layout>;
+  if (!country) return <Layout><div>Negara tidak ditemukan</div></Layout>;
 
   return (
     <Layout>
@@ -25,7 +25,7 @@ const CountryDetails = () => {
         <div className="mb-8">
           <Link to="/">
             <Button variant="outline">
-              ← Back to Countries
+              ← Kembali ke Beranda
             </Button>
           </Link>
         </div>
@@ -50,19 +50,19 @@ const CountryDetails = () => {
               
               <div className="space-y-3">
                 <div className="flex">
-                  <span className="font-medium text-gray-700 w-32">Capital:</span>
+                  <span className="font-medium text-gray-700 w-32">Ibu Kota:</span>
                   <span>{country.capital?.[0] || 'N/A'}</span>
                 </div>
                 <div className="flex">
-                  <span className="font-medium text-gray-700 w-32">Population:</span>
+                  <span className="font-medium text-gray-700 w-32">Populasi:</span>
                   <span>{country.population?.toLocaleString()}</span>
                 </div>
                 <div className="flex">
-                  <span className="font-medium text-gray-700 w-32">Region:</span>
+                  <span className="font-medium text-gray-700 w-32">Wilayah:</span>
                   <span>{country.region}</span>
                 </div>
                 <div className="flex">
-                  <span className="font-medium text-gray-700 w-32">Sub Region:</span>
+                  <span className="font-medium text-gray-700 w-32">SubWilayah:</span>
                   <span>{country.subregion || 'N/A'}</span>
                 </div>
               </div>
@@ -73,22 +73,22 @@ const CountryDetails = () => {
         {/* Additional Info */}
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white p-6 rounded-lg shadow">
-            <h3 className="text-lg font-semibold mb-4">Basic Information</h3>
+            <h3 className="text-lg font-semibold mb-4">Informasi Dasar</h3>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
                 <span className="text-gray-600">Area:</span>
                 <span>{country.area?.toLocaleString()} km²</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-600">Languages:</span>
+                <span className="text-gray-600">Bahasa:</span>
                 <span>{country.languages ? Object.values(country.languages).join(', ') : 'N/A'}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-600">Currencies:</span>
+                <span className="text-gray-600">Mata Uang:</span>
                 <span>{country.currencies ? Object.values(country.currencies).map(c => c.name).join(', ') : 'N/A'}</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-600">Timezones:</span>
+                <span className="text-gray-600">Zona Waktu:</span>
                 <span>{country.timezones?.[0] || 'N/A'}</span>
               </div>
             </div>

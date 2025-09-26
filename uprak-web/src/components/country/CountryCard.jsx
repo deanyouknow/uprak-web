@@ -38,15 +38,15 @@ const CountryCard = ({ country, index }) => {
         
         <div className="space-y-2 text-sm text-gray-600">
           <div className="flex justify-between">
-            <span className="font-medium">Population:</span>
+            <span className="font-medium">Populasi:</span>
             <span className="text-right">{country.population?.toLocaleString()}</span>
           </div>
           <div className="flex justify-between">
-            <span className="font-medium">Region:</span>
+            <span className="font-medium">Wilayah:</span>
             <span className="text-right">{country.region}</span>
           </div>
           <div className="flex justify-between">
-            <span className="font-medium">Capital:</span>
+            <span className="font-medium">Ibu Kota:</span>
             <span className="text-right">{country.capital?.[0] || 'N/A'}</span>
           </div>
         </div>

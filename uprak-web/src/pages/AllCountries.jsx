@@ -43,16 +43,16 @@ const AllCountries = () => {
           <div className="mb-6">
             <Link to="/">
               <Button variant="outline" className="mb-4">
-                ← Back to Home
+                ← Kembali ke Beranda
               </Button>
             </Link>
           </div>
           
           <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            All Countries
+            Jelajahi Semua Negara
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Browse through all countries or use the search to find specific ones
+            Temukan informasi tentang negara-negara di seluruh dunia. Gunakan fitur pencarian untuk menemukan negara tertentu atau jelajahi daftar lengkap negara yang tersedia.
           </p>
         </motion.div>
 
@@ -65,10 +65,10 @@ const AllCountries = () => {
 
         {/* Results Info */}
         <div className="flex justify-between items-center text-sm text-gray-600">
-          <span>Showing {paginatedData.length} of {countries.length} countries</span>
+          <span>Menampikan {paginatedData.length} dari {countries.length} negara</span>
           {searchQuery && (
             <span className="text-blue-600">
-              Search results for "{searchQuery}"
+              Hasil Pencarian dari "{searchQuery}"
             </span>
           )}
         </div>
@@ -95,13 +95,13 @@ const AllCountries = () => {
             className="text-center py-12"
           >
             <div className="text-gray-500 text-lg">
-              No countries found for "{searchQuery}"
+              Tidak ada negara yang ditemukan untuk "{searchQuery}"
             </div>
             <button
               onClick={() => handleSearch('')}
               className="text-blue-600 hover:text-blue-700 mt-2"
             >
-              Clear search
+              Bersihkan Pencarian
             </button>
           </motion.div>
         )}

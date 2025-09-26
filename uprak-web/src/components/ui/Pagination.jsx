@@ -19,7 +19,7 @@ const Pagination = ({
         disabled={!hasPrevPage}
         variant="outline"
       >
-        Previous
+        Sebelumnya
       </Button>
       
       <div className="flex items-center space-x-2">
@@ -53,7 +53,7 @@ const Pagination = ({
         disabled={!hasNextPage}
         variant="outline"
       >
-        Next
+        Selanjutnya
       </Button>
     </motion.div>
   );
