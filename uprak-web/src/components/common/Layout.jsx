@@ -8,8 +8,8 @@ const Layout = ({ children }) => {
   const { isDark, toggleTheme } = useTheme();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-500 via-white to-slate-300 dark:from-gray-900 dark:via-gray-800 dark:to-black">
-      <header className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg border-b border-gray-200/50 dark:border-gray-700/50 sticky top-0 z-50">
+    <div className="min-h-screen bg-gradient-to-br from-gray-500 via-white to-slate-800 dark:from-gray-900 dark:via-gray-800 dark:to-black">
+      <header className="bg-gray dark:bg-gray-900/80 backdrop-blur-md shadow-lg border-b border-gray-200/50 dark:border-gray-700/50 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <Link to="/" className="flex items-center">
