@@ -4,7 +4,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="text-center">
           <p className="text-black dark:text-gray-400 text-sm">
-            © 2025 Countries Explorer. All rights reserved.
+            © 2025 TerraExplorer. All rights reserved.
           </p>
         </div>
       </div>

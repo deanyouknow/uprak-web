@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             <Link to="/" className="flex items-center">
-              <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Countries Explorer</h1>
+              <h1 className="text-2xl font-bold text-gray-900 dark:text-white">TerraExplorer</h1>
             </Link>
 
             <div className="flex items-center space-x-4">
