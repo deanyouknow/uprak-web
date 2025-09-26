@@ -17,7 +17,7 @@ const CountryCard = ({ country, index }) => {
         y: -8, 
         boxShadow: "0 20px 40px -10px rgba(0, 0, 0, 0.15)" 
       }}
-      className="bg-white rounded-xl shadow-md overflow-hidden cursor-pointer
+      className="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden cursor-pointer
                  hover:shadow-xl transition-all duration-300 group"
       onClick={handleClick}
     >
@@ -32,11 +32,11 @@ const CountryCard = ({ country, index }) => {
       </div>
       
       <div className="p-4 sm:p-5">
-        <h3 className="font-bold text-lg text-gray-900 mb-3 truncate group-hover:text-blue-600 transition-colors">
+        <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-3 truncate group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
           {country.name?.common}
         </h3>
-        
-        <div className="space-y-2 text-sm text-gray-600">
+
+        <div className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
           <div className="flex justify-between">
             <span className="font-medium">Populasi:</span>
             <span className="text-right">{country.population?.toLocaleString()}</span>

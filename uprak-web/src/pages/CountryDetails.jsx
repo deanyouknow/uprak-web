@@ -31,7 +31,7 @@ const CountryDetails = () => {
         </div>
 
         {/* Country Header */}
-        <div className="bg-white rounded-lg shadow-lg overflow-hidden mb-8">
+        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden mb-8">
           <div className="md:flex">
             <div className="md:w-1/2">
               <img
@@ -41,29 +41,29 @@ const CountryDetails = () => {
               />
             </div>
             <div className="md:w-1/2 p-8">
-              <h1 className="text-4xl font-bold text-gray-900 mb-4">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
                 {country.name?.common}
               </h1>
-              <h2 className="text-xl text-gray-600 mb-6">
+              <h2 className="text-xl text-gray-600 dark:text-gray-400 mb-6">
                 {country.name?.official}
               </h2>
               
               <div className="space-y-3">
                 <div className="flex">
-                  <span className="font-medium text-gray-700 w-32">Ibu Kota:</span>
-                  <span>{country.capital?.[0] || 'N/A'}</span>
+                  <span className="font-medium text-gray-700 dark:text-gray-300 w-32">Ibu Kota:</span>
+                  <span className="dark:text-white">{country.capital?.[0] || 'N/A'}</span>
                 </div>
                 <div className="flex">
-                  <span className="font-medium text-gray-700 w-32">Populasi:</span>
-                  <span>{country.population?.toLocaleString()}</span>
+                  <span className="font-medium text-gray-700 dark:text-gray-300 w-32">Populasi:</span>
+                  <span className="dark:text-white">{country.population?.toLocaleString()}</span>
                 </div>
                 <div className="flex">
-                  <span className="font-medium text-gray-700 w-32">Wilayah:</span>
-                  <span>{country.region}</span>
+                  <span className="font-medium text-gray-700 dark:text-gray-300 w-32">Wilayah:</span>
+                  <span className="dark:text-white">{country.region}</span>
                 </div>
                 <div className="flex">
-                  <span className="font-medium text-gray-700 w-32">SubWilayah:</span>
-                  <span>{country.subregion || 'N/A'}</span>
+                  <span className="font-medium text-gray-700 dark:text-gray-300 w-32">SubWilayah:</span>
+                  <span className="dark:text-white">{country.subregion || 'N/A'}</span>
                 </div>
               </div>
             </div>
@@ -72,50 +72,50 @@ const CountryDetails = () => {
 
         {/* Additional Info */}
         <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white p-6 rounded-lg shadow">
-            <h3 className="text-lg font-semibold mb-4">Informasi Dasar</h3>
-            <div className="space-y-2 text-sm">
-              <div className="flex justify-between">
-                <span className="text-gray-600">Area:</span>
-                <span>{country.area?.toLocaleString()} km²</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-600">Bahasa:</span>
-                <span>{country.languages ? Object.values(country.languages).join(', ') : 'N/A'}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-600">Mata Uang:</span>
-                <span>{country.currencies ? Object.values(country.currencies).map(c => c.name).join(', ') : 'N/A'}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-600">Zona Waktu:</span>
-                <span>{country.timezones?.[0] || 'N/A'}</span>
-              </div>
-            </div>
-          </div>
+           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Informasi Dasar</h3>
+             <div className="space-y-2 text-sm">
+               <div className="flex justify-between">
+                 <span className="text-gray-600 dark:text-gray-400">Area:</span>
+                 <span className="dark:text-white">{country.area?.toLocaleString()} km²</span>
+               </div>
+               <div className="flex justify-between">
+                 <span className="text-gray-600 dark:text-gray-400">Bahasa:</span>
+                 <span className="dark:text-white">{country.languages ? Object.values(country.languages).join(', ') : 'N/A'}</span>
+               </div>
+               <div className="flex justify-between">
+                 <span className="text-gray-600 dark:text-gray-400">Mata Uang:</span>
+                 <span className="dark:text-white">{country.currencies ? Object.values(country.currencies).map(c => c.name).join(', ') : 'N/A'}</span>
+               </div>
+               <div className="flex justify-between">
+                 <span className="text-gray-600 dark:text-gray-400">Zona Waktu:</span>
+                 <span className="dark:text-white">{country.timezones?.[0] || 'N/A'}</span>
+               </div>
+             </div>
+           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow">
-            <h3 className="text-lg font-semibold mb-4">Geography</h3>
-            <div className="space-y-2 text-sm">
-              <div className="flex justify-between">
-                <span className="text-gray-600">Continent:</span>
-                <span>{country.continents?.[0] || 'N/A'}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-600">Borders:</span>
-                <span>{country.borders?.length || 0} countries</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-600">Landlocked:</span>
-                <span>{country.landlocked ? 'Yes' : 'No'}</span>
-              </div>
-              <div className="flex justify-between">
-                <span className="text-gray-600">UN Member:</span>
-                <span>{country.unMember ? 'Yes' : 'No'}</span>
-              </div>
-            </div>
-          </div>
-        </div>
+           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Geography</h3>
+             <div className="space-y-2 text-sm">
+               <div className="flex justify-between">
+                 <span className="text-gray-600 dark:text-gray-400">Continent:</span>
+                 <span className="dark:text-white">{country.continents?.[0] || 'N/A'}</span>
+               </div>
+               <div className="flex justify-between">
+                 <span className="text-gray-600 dark:text-gray-400">Borders:</span>
+                 <span className="dark:text-white">{country.borders?.length || 0} countries</span>
+               </div>
+               <div className="flex justify-between">
+                 <span className="text-gray-600 dark:text-gray-400">Landlocked:</span>
+                 <span className="dark:text-white">{country.landlocked ? 'Yes' : 'No'}</span>
+               </div>
+               <div className="flex justify-between">
+                 <span className="text-gray-600 dark:text-gray-400">UN Member:</span>
+                 <span className="dark:text-white">{country.unMember ? 'Yes' : 'No'}</span>
+               </div>
+             </div>
+           </div>
+         </div>
       </motion.div>
     </Layout>
   );

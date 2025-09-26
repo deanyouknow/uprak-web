@@ -17,7 +17,7 @@ const RandomCountryCard = ({ country, index }) => {
         y: -8, 
         boxShadow: "0 15px 30px -5px rgba(0, 0, 0, 0.15)" 
       }}
-      className="bg-white rounded-lg shadow-md overflow-hidden cursor-pointer
+      className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden cursor-pointer
                  hover:shadow-lg transition-all duration-300 group min-w-0 flex-1"
       onClick={handleClick}
     >
@@ -32,11 +32,11 @@ const RandomCountryCard = ({ country, index }) => {
       </div>
       
       <div className="p-3">
-        <h3 className="font-bold text-sm text-gray-900 mb-2 truncate group-hover:text-blue-600 transition-colors">
+        <h3 className="font-bold text-sm text-gray-900 dark:text-white mb-2 truncate group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
           {country.name?.common}
         </h3>
-        
-        <div className="space-y-1 text-xs text-gray-600">
+
+        <div className="space-y-1 text-xs text-gray-600 dark:text-gray-400">
           <div className="flex justify-between">
             <span className="font-medium">Populasi:</span>
             <span className="text-right text-xs">

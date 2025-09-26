@@ -14,7 +14,7 @@ const UserCountryCard = ({ country }) => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl shadow-lg overflow-hidden text-white mb-12"
+      className="bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-600 dark:to-purple-700 rounded-xl shadow-lg overflow-hidden text-white mb-12"
     >
       <div className="p-6 md:p-8">
         <div className="flex items-center mb-4">
@@ -54,8 +54,8 @@ const UserCountryCard = ({ country }) => {
             
             <button
               onClick={handleViewDetails}
-              className="mt-6 bg-white text-blue-600 px-6 py-3 rounded-lg font-medium 
-                         hover:bg-blue-50 transition-all duration-200 transform hover:scale-105"
+              className="mt-6 bg-white dark:bg-gray-800 text-blue-600 dark:text-blue-400 px-6 py-3 rounded-lg font-medium
+                         hover:bg-blue-50 dark:hover:bg-gray-700 transition-all duration-200 transform hover:scale-105"
             >
               View Details
             </button>

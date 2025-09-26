@@ -39,10 +39,10 @@ const Home = () => {
         >
           <div className="flex justify-between items-center mb-6">
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-2">
                 Jelajahi Negara Negara
               </h2>
-              <p className="text-gray-600">
+              <p className="text-gray-600 dark:text-gray-400">
                 Temukan informasi menarik tentang berbagai negara di seluruh dunia.
               </p>
             </div>
@@ -86,34 +86,34 @@ const Home = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl p-6 md:p-8"
+          className="bg-gradient-to-r from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-700 rounded-xl p-6 md:p-8"
         >
           <div className="text-center">
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-4">
               Fakta Menarik Tentang Negara Negara di Dunia
             </h3>
-            <p className="text-gray-600 max-w-2xl mx-auto mb-6">
+            <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto mb-6">
               Dunia ini terdiri dari berbagai negara dengan keunikan budaya, bahasa, dan sejarah masing-masing. Berikut adalah beberapa fakta menarik:
             </p>
             
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto text-center">
-              <div className="bg-white rounded-lg p-4 shadow-sm">
-                <div className="text-2xl font-bold text-blue-600 mb-1">195</div>
-                <div className="text-sm text-gray-600">Negara</div>
-              </div>
-              <div className="bg-white rounded-lg p-4 shadow-sm">
-                <div className="text-2xl font-bold text-green-600 mb-1">7</div>
-                <div className="text-sm text-gray-600">Benua</div>
-              </div>
-              <div className="bg-white rounded-lg p-4 shadow-sm">
-                <div className="text-2xl font-bold text-purple-600 mb-1">180+</div>
-                <div className="text-sm text-gray-600">Mata Uang</div>
-              </div>
-              <div className="bg-white rounded-lg p-4 shadow-sm">
-                <div className="text-2xl font-bold text-orange-600 mb-1">6500+</div>
-                <div className="text-sm text-gray-600">Bahasa</div>
-              </div>
-            </div>
+               <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                 <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-1">195</div>
+                 <div className="text-sm text-gray-600 dark:text-gray-400">Negara</div>
+               </div>
+               <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                 <div className="text-2xl font-bold text-green-600 dark:text-green-400 mb-1">7</div>
+                 <div className="text-sm text-gray-600 dark:text-gray-400">Benua</div>
+               </div>
+               <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                 <div className="text-2xl font-bold text-purple-600 dark:text-purple-400 mb-1">180+</div>
+                 <div className="text-sm text-gray-600 dark:text-gray-400">Mata Uang</div>
+               </div>
+               <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                 <div className="text-2xl font-bold text-orange-600 dark:text-orange-400 mb-1">6500+</div>
+                 <div className="text-sm text-gray-600 dark:text-gray-400">Bahasa</div>
+               </div>
+             </div>
           </div>
         </motion.section>
       </div>

@@ -14,7 +14,7 @@ const SearchBar = ({ searchQuery, onSearch, placeholder = "Search countries..." 
         placeholder={placeholder}
         className="w-full max-w-md px-4 py-3 border border-gray-300 rounded-lg 
                    focus:ring-2 focus:ring-blue-500 focus:border-transparent 
-                   transition duration-200 shadow-sm"
+                   transition duration-200 shadow-sm dark:text-gray-200 dark:bg-gray-700 dark:border-gray-600"
       />
     </motion.div>
   );
