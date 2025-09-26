@@ -2,7 +2,7 @@
 
 Cari tahu informasi lengkap negara-negara di seluruh dunia melalui **TerraExplorer**.  
 Aplikasi ini menyajikan beragam data penting seperti **wilayah, bahasa, mata uang, zona waktu, ibu kota, populasi, benua**, hingga informasi **geografis** lainnya.  
-Didesain untuk memberikan pengalaman eksplorasi interaktif, ringan, dan modern menggunakan teknologi **React + Vite**.
+Didesain untuk memberikan pengalaman eksplorasi interaktif, ringan, dan modern menggunakan teknologi **React + Vite** dan juga di styling dengan **TailwindCSS dan Framer-Motion**.
 
 ---
 
