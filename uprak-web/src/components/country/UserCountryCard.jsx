@@ -14,12 +14,12 @@ const UserCountryCard = ({ country }) => {
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
-      className="bg-gradient-to-r from-blue-500 to-purple-600 dark:from-blue-600 dark:to-purple-700 rounded-xl shadow-lg overflow-hidden text-white mb-12"
+      className="bg-gradient-to-r from-gray-300/90 to-white/90 dark:from-gray-800/90 dark:to-gray-600/90 backdrop-blur-sm rounded-xl shadow-2xl border border-gray-400/30 dark:border-gray-500/30 overflow-hidden text-gray-900 dark:text-white mb-12"
     >
       <div className="p-6 md:p-8">
         <div className="flex items-center mb-4">
           <div className="w-3 h-3 bg-green-400 rounded-full mr-3 animate-pulse"></div>
-          <span className="text-sm font-medium text-blue-100">Lokasi Anda</span>
+          <span className="text-sm font-medium text-gray-500 dark:text-blue-100">Lokasi Anda</span>
         </div>
         
         <div className="grid md:grid-cols-2 gap-6 items-center">
@@ -28,7 +28,7 @@ const UserCountryCard = ({ country }) => {
               Selamat Datang Di {country.name?.common}!
             </h2>
             
-            <div className="space-y-3 text-blue-100">
+            <div className="space-y-3 dark:text-blue-100 text-gray-500">
               <div className="flex items-center">
                 <span className="font-medium mr-3 min-w-[80px]">Ibu Kota:</span>
                 <span>{country.capital?.[0] || 'N/A'}</span>
@@ -38,7 +38,7 @@ const UserCountryCard = ({ country }) => {
                 <span>{country.population?.toLocaleString()}</span>
               </div>
               <div className="flex items-center">
-                <span className="font-medium mr-3 min-w-[80px]">Wilayah:</span>
+                <span className="font-medium mr-3 min-w-[80px]">Benua:</span>
                 <span>{country.region}</span>
               </div>
               <div className="flex items-center">

@@ -17,8 +17,8 @@ const CountryCard = ({ country, index }) => {
         y: -8, 
         boxShadow: "0 20px 40px -10px rgba(0, 0, 0, 0.15)" 
       }}
-      className="bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden cursor-pointer
-                 hover:shadow-xl transition-all duration-300 group"
+      className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 overflow-hidden cursor-pointer
+                 hover:shadow-2xl hover:scale-[1.02] transition-all duration-300 group"
       onClick={handleClick}
     >
       <div className="relative h-40 sm:h-48 overflow-hidden">
@@ -42,7 +42,7 @@ const CountryCard = ({ country, index }) => {
             <span className="text-right">{country.population?.toLocaleString()}</span>
           </div>
           <div className="flex justify-between">
-            <span className="font-medium">Wilayah:</span>
+            <span className="font-medium">Benua:</span>
             <span className="text-right">{country.region}</span>
           </div>
           <div className="flex justify-between">

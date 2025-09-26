@@ -17,8 +17,8 @@ const RandomCountryCard = ({ country, index }) => {
         y: -8, 
         boxShadow: "0 15px 30px -5px rgba(0, 0, 0, 0.15)" 
       }}
-      className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden cursor-pointer
-                 hover:shadow-lg transition-all duration-300 group min-w-0 flex-1"
+      className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-lg shadow-lg border border-gray-200/50 dark:border-gray-700/50 overflow-hidden cursor-pointer
+                 hover:shadow-xl hover:scale-[1.02] transition-all duration-300 group min-w-0 flex-1"
       onClick={handleClick}
     >
       <div className="relative h-24 sm:h-28 overflow-hidden">
@@ -47,7 +47,7 @@ const RandomCountryCard = ({ country, index }) => {
             </span>
           </div>
           <div className="flex justify-between">
-            <span className="font-medium">Wilayah:</span>
+            <span className="font-medium">Benua:</span>
             <span className="text-right">{country.region}</span>
           </div>
           <div className="flex justify-between">

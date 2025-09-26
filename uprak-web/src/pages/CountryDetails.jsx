@@ -31,7 +31,7 @@ const CountryDetails = () => {
         </div>
 
         {/* Country Header */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden mb-8">
+        <div className="bg-gradient-to-r from-gray-300/90 to-white/90 dark:from-gray-800/90 dark:to-gray-600/90 backdrop-blur-sm  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden mb-8">
           <div className="md:flex">
             <div className="md:w-1/2">
               <img
@@ -95,23 +95,23 @@ const CountryDetails = () => {
            </div>
 
            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Geography</h3>
+             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Geografis</h3>
              <div className="space-y-2 text-sm">
                <div className="flex justify-between">
-                 <span className="text-gray-600 dark:text-gray-400">Continent:</span>
+                 <span className="text-gray-600 dark:text-gray-400">Benua:</span>
                  <span className="dark:text-white">{country.continents?.[0] || 'N/A'}</span>
                </div>
                <div className="flex justify-between">
-                 <span className="text-gray-600 dark:text-gray-400">Borders:</span>
-                 <span className="dark:text-white">{country.borders?.length || 0} countries</span>
+                 <span className="text-gray-600 dark:text-gray-400">Perbatasan:</span>
+                 <span className="dark:text-white">{country.borders?.length || 0} Negara</span>
                </div>
                <div className="flex justify-between">
-                 <span className="text-gray-600 dark:text-gray-400">Landlocked:</span>
-                 <span className="dark:text-white">{country.landlocked ? 'Yes' : 'No'}</span>
+                 <span className="text-gray-600 dark:text-gray-400">Terkurung Oleh Daratan:</span>
+                 <span className="dark:text-white">{country.landlocked ? 'Ya' : 'Tidak'}</span>
                </div>
                <div className="flex justify-between">
-                 <span className="text-gray-600 dark:text-gray-400">UN Member:</span>
-                 <span className="dark:text-white">{country.unMember ? 'Yes' : 'No'}</span>
+                 <span className="text-gray-600 dark:text-gray-400">Member UN:</span>
+                 <span className="dark:text-white">{country.unMember ? 'Ya' : 'Tidak'}</span>
                </div>
              </div>
            </div>

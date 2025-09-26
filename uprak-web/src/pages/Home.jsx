@@ -26,7 +26,7 @@ const Home = () => {
 
   return (
     <>
-    <Navbar>
+    <Layout>
       <div className="space-y-12">
         {/* User Country Section */}
         <UserCountryCard country={userCountry} />
@@ -72,6 +72,7 @@ const Home = () => {
           <div className="text-center mt-8">
             <Link to="/countries">
               <Button 
+              variant="outline"
                 size="lg"
                 className="w-full sm:w-auto"
               >
@@ -117,7 +118,7 @@ const Home = () => {
           </div>
         </motion.section>
       </div>
-    </Navbar>
+    </Layout>
     </>
   );
 };
