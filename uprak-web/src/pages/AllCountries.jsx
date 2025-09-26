@@ -98,8 +98,8 @@ const AllCountries = () => {
           >
             <option value="alphabet">Alphabet</option>
             <option value="random">Random</option>
-            <option value="population">Population</option>
-            <option value="region">Region</option>
+            <option value="population">Populasi</option>
+            <option value="region">Benua</option>
           </select>
         </div>
 
