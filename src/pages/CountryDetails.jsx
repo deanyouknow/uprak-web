@@ -21,7 +21,6 @@ const CountryDetails = () => {
         animate={{ opacity: 1, y: 0 }}
         className="max-w-4xl mx-auto"
       >
-        {/* Back Button */}
         <div className="mb-8">
           <Link to="/">
             <Button variant="outline">
@@ -30,7 +29,6 @@ const CountryDetails = () => {
           </Link>
         </div>
 
-        {/* Country Header */}
         <div className="bg-gradient-to-r from-gray-300/90 to-white/90 dark:from-gray-800/90 dark:to-gray-600/90 backdrop-blur-sm  rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden mb-8">
           <div className="md:flex">
             <div className="md:w-1/2">
@@ -70,7 +68,6 @@ const CountryDetails = () => {
           </div>
         </div>
 
-        {/* Additional Info */}
         <div className="grid md:grid-cols-2 gap-8">
            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
              <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Informasi Dasar</h3>

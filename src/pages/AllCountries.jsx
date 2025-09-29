@@ -58,7 +58,6 @@ const AllCountries = () => {
   return (
     <Layout>
       <div className="space-y-8">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -79,14 +78,12 @@ const AllCountries = () => {
           </p>
         </motion.div>
 
-        {/* Search */}
         <SearchBar
           searchQuery={searchQuery}
           onSearch={handleSearch}
           placeholder="Search for countries..."
         />
 
-        {/* Sort */}
         <div className="flex justify-between items-center mb-4">
           <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
             Sort by:
@@ -103,7 +100,6 @@ const AllCountries = () => {
           </select>
         </div>
 
-        {/* Results Info */}
         <div className="flex justify-between items-center text-sm text-gray-600 dark:text-gray-400">
           <span>Menampikan {paginatedData.length} dari {sortedCountries.length} negara</span>
           {searchQuery && (
@@ -113,10 +109,8 @@ const AllCountries = () => {
           )}
         </div>
 
-        {/* Countries Grid */}
         <CountryGrid countries={paginatedData} />
 
-        {/* Pagination */}
         {totalPages > 1 && (
           <Pagination
             currentPage={currentPage}
@@ -127,7 +121,6 @@ const AllCountries = () => {
           />
         )}
 
-        {/* No Results */}
         {countries.length === 0 && searchQuery && (
           <motion.div
             initial={{ opacity: 0 }}

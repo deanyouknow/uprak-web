@@ -28,10 +28,8 @@ const Home = () => {
     <>
     <Layout>
       <div className="space-y-12">
-        {/* User Country Section */}
         <UserCountryCard country={userCountry} />
 
-        {/* Random Countries Section */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -55,7 +53,6 @@ const Home = () => {
             </Button>
           </div>
           
-          {/* Mobile shuffle button */}
           <div className="sm:hidden mb-4">
             <Button 
               onClick={refreshRandomCountries}
@@ -82,7 +79,6 @@ const Home = () => {
           </div>
         </motion.section>
 
-        {/* Additional Info Section */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -103,7 +99,7 @@ const Home = () => {
                  <div className="text-sm text-gray-600 dark:text-gray-400">Negara</div>
                </div>
                <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                 <div className="text-2xl font-bold text-green-600 dark:text-green-400 mb-1">7</div>
+                 <div className="text-2xl font-bold text-green-600 dark:text-green-400 mb-1">7+</div>
                  <div className="text-sm text-gray-600 dark:text-gray-400">Benua</div>
                </div>
                <div className="bg-white dark:bg-gray-800 rounded-lg p-4 shadow-lg hover:shadow-xl transition-shadow duration-300">

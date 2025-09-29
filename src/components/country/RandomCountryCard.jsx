@@ -36,7 +36,7 @@ const RandomCountryCard = ({ country, index }) => {
           {country.name?.common}
         </h3>
 
-        <div className="space-y-1 text-xs text-gray-600 dark:text-gray-400">
+        <div className="hidden sm:block space-y-1 text-xs text-gray-600 dark:text-gray-400">
           <div className="flex justify-between">
             <span className="font-medium">Populasi:</span>
             <span className="text-right text-xs">

@@ -4,7 +4,6 @@
 @tailwind utilities;
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* Custom scrollbar for horizontal scroll */
 .overflow-x-auto::-webkit-scrollbar {
   height: 6px;
 }
