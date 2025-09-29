@@ -1,4 +1,4 @@
-<img width="1919" height="968" alt="image" src="https://github.com/user-attachments/assets/b6afd3a9-ce08-4a21-94e7-11fe57ba765d" /># 🌍 TerraExplorer
+# 🌍 TerraExplorer
 
 Cari tahu informasi lengkap negara-negara di seluruh dunia melalui **TerraExplorer**.  
 Aplikasi ini menyajikan beragam data penting seperti **wilayah, bahasa, mata uang, zona waktu, ibu kota, populasi, benua**, hingga informasi **geografis** lainnya.  
@@ -6,11 +6,14 @@ Didesain untuk memberikan pengalaman eksplorasi interaktif, ringan, dan modern m
 
 ---
 
-## icon Preview
+## 📸 Preview
 ![Homepage](docs/home.jpg)
 *Halaman utama TerraExplorer menampilkan daftar negara*
 
-![Detail Page](docs/all.jpg)  
+![List Page](docs/all.jpg)  
+*Halaman list list negara lengkap*
+
+![Detail Page](docs/detail.jpg)  
 *Halaman detail negara dengan informasi lengkap*
 
 ---
