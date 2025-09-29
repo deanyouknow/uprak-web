@@ -38,7 +38,7 @@ Pastikan Anda sudah menginstal **Node.js** (versi terbaru disarankan).
 
 ## 👥 Anggota Kelompok
 - Dean Althayani Murtadha
-- Raditya Gustian Putra  
+- Radhitya Gustian Putra  
 - Shafa Albi Pratama
 -  
 
